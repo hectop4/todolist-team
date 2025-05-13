@@ -20,12 +20,40 @@
       href="{{ url_for('static', filename='style.css') }}"
     />
   </head>
-  <body>
-    <nav class="w-100 navbar bg-info">
-      <div class="container-fluid d-flex justify-content-center">
+  <body class="d-flex flex-column align-items-center justify-content-center">
+    <nav class="w-100 navbar">
+      <div
+        class="container-fluid d-flex justify-content-center d-flex align-items-center"
+      >
         <a class="navbar-brand text-light" href="/"> Todo List Team </a>
       </div>
     </nav>
+
+    <div
+      class="w-75 form-container d-flex flex-column align-items-center justify-content-center"
+    >
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label"
+          >Task Title</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Title"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"
+          >Task Description</label
+        >
+        <textarea
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3"
+        ></textarea>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

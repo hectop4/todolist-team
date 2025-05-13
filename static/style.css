@@ -1,3 +1,16 @@
 body {
   background-color: #5409da;
 }
+
+.navbar {
+  background-color: #4e71ff;
+  height: 7rem;
+}
+
+.navbar a {
+  font-size: 4rem;
+}
+
+input {
+  background-color: red;
+}

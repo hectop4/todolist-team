@@ -1,10 +1,10 @@
+# This is a simple Flask application that returns "Hello World!" when accessed at the root URL.
+from flask import Flask, render_template
 
-print("hELLO TEST")
+app = Flask(__name__)
+@app.route('/')
+def index():
+    return render_template('index.html')
 
-print("hello world")
-
-print("Hello 2")
-print("Hello 3")
-print("Hello 4")
-print("Hello 5")
-
+if __name__ == '__main__':
+    app.run(debug=True)
